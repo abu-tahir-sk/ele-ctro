@@ -1,0 +1,50 @@
+[
+  {
+    "id": 101,
+    "name": "Tablet Air 3 WiFi 64GB Gold",
+    "category": "Tablets",
+    "price": 629.00,
+    "image_url": "/assets/images/tablet_gold.webp",
+    "card_style": "compact"
+  },
+  {
+    "id": 204,
+    "name": "Tablet White EliteBook Revolve 810 G2",
+    "category": "Laptops & Computers",
+    "price": 1299.00,
+    "image_url": "/assets/images/laptop_elitebook.webp",
+    "card_style": "full_image"
+  },
+  {
+    "id": 315,
+    "name": "Pendrive USB 3.0 Flash 64 GB",
+    "category": "Accessories",
+    "price": 110.00,
+    "image_url": "/assets/images/pendrive_64gb.webp",
+    "card_style": "full_image"
+  },
+  {
+    "id": 402,
+    "name": "White Solo 2 Wireless",
+    "category": "Headphones",
+    "price": 110.00,
+    "image_url": "/assets/images/headphones_white.webp",
+    "card_style": "compact"
+  },
+  {
+    "id": 507,
+    "name": "Smartwatch 2.0 LTE WiFi",
+    "category": "Smartwatches",
+    "price": 110.00,
+    "image_url": "/assets/images/smartwatch_lte.webp",
+    "card_style": "compact"
+  },
+  {
+    "id": 611,
+    "name": "Gear Virtual Reality",
+    "category": "Smartwatches",
+    "price": 799.00,
+    "image_url": "/assets/images/vr_gear.webp",
+    "card_style": "full_image"
+  }
+]

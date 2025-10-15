@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "type": "special_offer",
+    "name": "Game Console Controller + USB 3.0 Cable",
+    "image_url": "https://i.ibb.co/4wF4d4Pp/img1.jpg",
+    "original_price": 99.00,
+    "current_price": 79.00,
+    "discount_label": "Save $120",
+    "stock_available": 6,
+    "stock_sold": 28
+  },
+  {
+    "id": 2,
+    "type": "featured",
+    "name": "Wireless Audio System Multiroom 360 degree Full...",
+    "category": "Speakers",
+    "image_url": "https://i.ibb.co/W45pRRbF/img1-1.png",
+    "current_price": 685.00
+  },
+  {
+    "id": 3,
+    "type": "featured",
+    "name": "Tablet White EliteBook Revolve 810 G2",
+    "category": "Tablets & Laptops",
+    "image_url": "https://i.ibb.co/nsgFWZmr/fdgf.webp",
+    "original_price": 2299.00,
+    "current_price": 1999.00
+  },
+  {
+    "id": 4,
+    "type": "featured",
+    "name": "Purple Solo 2 Wireless",
+    "category": "Headphones",
+    "image_url": "https://i.ibb.co/4wF4d4Pp/img1.jpg",
+    "current_price": 685.00
+  },
+  {
+    "id": 5,
+    "type": "featured",
+    "name": "Smartphone 6S 32GB LTE",
+    "category": "Speakers",
+    "image_url": "https://i.ibb.co/23gGqWLg/JBL-104-BT-WHITE-Product-Photo.jpg",
+    "current_price": null
+  },
+  {
+    "id": 6,
+    "type": "featured",
+    "name": "Widescreen NX Mini F1 SMART NX",
+    "category": "Speakers",
+    "image_url": "https://i.ibb.co/j9L0pHT4/itbd969d-removebg-preview.png",
+    "current_price": null
+  }
+]

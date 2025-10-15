@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "CATCH BIG",
+    "highlight": "DEALS",
+    "subtitle": "ON THE CAMERAS",
+    "button": "Shop now",
+    "image": "https://i.ibb.co/99kY2cbY/img4.png"
+  },
+  {
+    "id": 2,
+    "title": "CATCH BIG",
+    "highlight": "DEALS",
+    "subtitle": "ON THE LAPTOPS",
+    "button": "Shop now",
+    "image": "https://i.ibb.co/66pVxwG/img3.jpg"
+  },
+  {
+    "id": 3,
+    "title": "CATCH BIG",
+    "highlight": "DEALS",
+    "subtitle": "ON THE DESKTOPS",
+    "button": "Shop now",
+    "image": "https://i.ibb.co/4RyBKsLr/img1.png"
+  },
+  {
+    "id": 4,
+    "title": "CATCH BIG",
+    "highlight": "DEALS",
+    "subtitle": "ON THE ACCESSORIES",
+    "button": "Shop now",
+    "image": "https://i.ibb.co/TqB59YBc/img2.jpg"
+  }
+]

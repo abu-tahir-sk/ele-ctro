@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "type": "special_offer",
+    "name": "Game Console Controller + USB 3.0 Cable",
+    "image_url": "http://googleusercontent.com/image_collection/image_retrieval/174432532373645222_0",
+    "original_price": 99.00,
+    "current_price": 79.00,
+    "discount_label": "Save $120",
+    "stock_available": 6,
+    "stock_sold": 28
+  },
+  {
+    "id": 2,
+    "type": "featured",
+    "name": "Wireless Audio System Multiroom 360 degree Full...",
+    "category": "Speakers",
+    "image_url": "http://googleusercontent.com/image_collection/image_retrieval/174432532373645222_1",
+    "original_price": null,
+    "current_price": 685.00
+  },
+  {
+    "id": 3,
+    "type": "featured",
+    "name": "Tablet White EliteBook Revolve 810 G2",
+    "category": "Speakers",
+    "image_url": "http://googleusercontent.com/image_collection/image_retrieval/174432532373645222_2",
+    "original_price": 2299.00,
+    "current_price": 1999.00
+  },
+  {
+    "id": 4,
+    "type": "featured",
+    "name": "Purple Solo 2 Wireless",
+    "category": "Speakers",
+    "image_url": "http://googleusercontent.com/image_collection/image_retrieval/174432532373645222_3",
+    "original_price": null,
+    "current_price": 685.00
+  },
+  {
+    "id": 5,
+    "type": "featured",
+    "name": "Smartphone 6S 32GB LTE",
+    "category": "Speakers",
+    "image_url": "http://googleusercontent.com/image_collection/image_retrieval/174432532373645222_4",
+    "original_price": null,
+    "current_price": null
+  },
+  {
+    "id": 6,
+    "type": "featured",
+    "name": "Widescreen NX Mini F1 SMART NX",
+    "category": "Speakers",
+    "image_url": "http://googleusercontent.com/image_collection/image_retrieval/174432532373645222_5",
+    "original_price": null,
+    "current_price": null
+  },
+  {
+    "id": 7,
+    "type": "featured",
+    "name": "Full Color LaserJet Pro M452dn",
+    "category": "Speakers",
+    "image_url": "http://googleusercontent.com/image_collection/image_retrieval/174432532373645222_6",
+    "original_price": null,
+    "current_price": null
+  }
+]

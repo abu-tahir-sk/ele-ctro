@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/W45pRRbF/img1-1.png",
+    "title": "The NEW STANDARD",
+    "description": "UNDER FAVORABLE SMARTWATCHES",
+    "price": " 749",
+    "discount": "99"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/2Yt1z85t/img2.png",
+    "title": "The NEW STANDARD",
+    "description": "UNDER FAVORABLE SMARTWATCHES",
+    "price": "749",
+    "discount": "99"
+  },
+  {
+    "image": "https://i.ibb.co/RTyTJZ59/img3.png",
+    "title": "The NEW STANDARD",
+    "description": "UNDER FAVORABLE SMARTWATCHES",
+    "price": "749",
+    "discount": "99"
+  }
+]
