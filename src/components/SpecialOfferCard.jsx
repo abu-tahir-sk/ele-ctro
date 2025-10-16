@@ -1,4 +1,4 @@
-import React from "react";
+
 
 // Helper function to format price
 const formatPrice = (price) => `$${price.toFixed(2)}`;
@@ -65,7 +65,7 @@ export default function SpecialOfferCard({ product }) {
               type="range"
               min={0}
               max="100"
-              value="40"
+              defaultValue="40"
               className="range text-yellow-300 my-2"
             />
             <p className="text-center py-3">Hurry Up! Offer ends in:</p>

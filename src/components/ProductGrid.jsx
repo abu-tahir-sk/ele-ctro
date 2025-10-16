@@ -1,4 +1,4 @@
-import React from 'react';
+
 import products from '../data/products.json'; // Make sure this path is correct
 import StandardProductCard from './StandardProductCard';
 import SpecialOfferCard from './SpecialOfferCard';

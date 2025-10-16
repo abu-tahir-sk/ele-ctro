@@ -1,0 +1,10 @@
+[
+  { "id": 1, "brand_name": "Apple", "logo_img": "/images/apple.png" },
+  { "id": 2, "brand_name": "Samsung", "logo_img": "/images/samsung.png" },
+  { "id": 3, "brand_name": "Sony", "logo_img": "/images/sony.png" },
+  { "id": 4, "brand_name": "LG", "logo_img": "/images/lg.png" },
+  { "id": 5, "brand_name": "Dell", "logo_img": "/images/dell.png" },
+  { "id": 6, "brand_name": "HP", "logo_img": "/images/hp.png" },
+  { "id": 7, "brand_name": "Asus", "logo_img": "/images/asus.png" },
+  { "id": 8, "brand_name": "Lenovo", "logo_img": "/images/lenovo.png" }
+]

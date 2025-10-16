@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Headphones",
+    "category": "Electronics",
+    "price": 59.99,
+    "image_url": "https://i.ibb.co/VmTz5yW/headphones.png"
+  },
+  {
+    "id": 2,
+    "title": "Classic Wrist Watch",
+    "category": "Accessories",
+    "price": 120.0,
+    "image_url": "https://i.ibb.co/FxQSmJK/watch.png"
+  },
+  {
+    "id": 3,
+    "title": "Sneaker Shoes",
+    "category": "Footwear",
+    "price": 89.99,
+    "image_url": "https://i.ibb.co/6Hcbm9L/shoes.png"
+  },
+  {
+    "id": 4,
+    "title": "Smartphone X",
+    "category": "Mobiles",
+    "price": 699.0,
+    "image_url": "https://i.ibb.co/khL3WnD/phone.png"
+  },
+  {
+    "id": 5,
+    "title": "Gaming Mouse",
+    "category": "Computer Accessories",
+    "price": 39.5,
+    "image_url": "https://i.ibb.co/Bcf8jxB/mouse.png"
+  },
+  {
+    "id": 6,
+    "title": "Bluetooth Speaker",
+    "category": "Audio Devices",
+    "price": 45.99,
+    "image_url": "https://i.ibb.co/wyxGzZr/speaker.png"
+  }
+]

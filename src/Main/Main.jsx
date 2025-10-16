@@ -1,8 +1,9 @@
 import { Outlet } from "react-router-dom";
 
-import Footer from "../components/Footer";
+
 import LargeNav from "../MainHeader/LargeNav";
 import Header from "../Header/Header";
+import FooterSection from "../components/FooterSection";
 
 
 
@@ -21,7 +22,7 @@ const Main = () => {
                         <Outlet/>
                   </main>
                   <footer>
-                        <Footer/>
+                        <FooterSection/>
                   </footer>
                   
             </div>

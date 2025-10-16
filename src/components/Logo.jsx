@@ -41,19 +41,19 @@ const Logo = () => {
          <div className="flex justify-center items-center gap-8">
           
            <div className="group">
-            <p class="absolute top-2 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p className="absolute top-2 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
       Compare
     </p>
             <FiRefreshCcw size={20} />
           </div>
           <div className="group">
-             <p class="absolute top-2 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+             <p className="absolute top-2 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
       Favorite
     </p>
             <MdFavoriteBorder size={20} />
           </div>
           <div className="flex items-center gap-2 group">
-             <p class="absolute top-2 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+             <p className="absolute top-2 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
       Cart
     </p>
             <HiOutlineShoppingBag className="font-bold" size={20} />
