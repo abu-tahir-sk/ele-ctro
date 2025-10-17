@@ -1,5 +1,4 @@
-// src/components/CartButton.jsx
-import React from 'react';
+
 
 const CartButton = () => (
     <button className="btn btn-warning btn-sm btn-circle text-white bg-yellow-500 hover:bg-yellow-600 border-none shadow-md min-w-0">

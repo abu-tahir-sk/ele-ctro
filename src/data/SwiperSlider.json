@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "category": "Accessories",
+    "title": "Purple Wireless Headphones Solo 2 HD",
+    "price": 1200,
+    "image": "https://i.ibb.co/XrgpMRhJ/1a.jpg"
+  },
+  {
+    "id": 2,
+    "category": "Accessories",
+    "title": "Yellow Earphones Waterproof with Bluetooth",
+    "price": 1000,
+    "image": "https://i.ibb.co/j9CjvX3g/2b.jpg"
+  },
+  {
+    "id": 3,
+    "category": "Accessories",
+    "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+    "price": 950,
+    "image": "https://i.ibb.co/4vXzyTT/3c.jpg"
+  },
+  {
+    "id": 4,
+    "category": "Powerbank",
+    "title": "Powerbank 1130 mAh Blue",
+    "price": 1100,
+    "image": "https://i.ibb.co/SXMqRbd4/4d.jpg"
+  },
+  {
+    "id": 5,
+    "category": "Camera",
+    "title": "Camera C430W 4k Waterproof",
+    "price": 980,
+    "image": "https://i.ibb.co/whsd6JSK/5e.jpg"
+  },
+  {
+    "id": 6,
+    "category": "Camera",
+    "title": "22Mps Camera 6200U with 500GB SDcard",
+    "price": 870,
+    "image": "https://i.ibb.co/4wHmrTS4/6f.jpg"
+  },
+  {
+    "id": 7,
+    "category": "Gaming",
+    "title": "Nerocool EN52377 Dead Silence Gaming Cube Case",
+    "price": 1500,
+    "image": "https://i.ibb.co/F4VjDLp9/7g.jpg"
+  },
+  {
+    "id": 8,
+    "category": "Mobile",
+    "title": "Smartphone 6S 32GB LTE",
+    "price": 1300,
+    "image": "https://i.ibb.co/1tGwzWDB/8h.jpg"
+  },
+  {
+    "id": 9,
+    "category": "Printer",
+    "title": "Full Color LaserJet Pro M452dn",
+    "price": 950,
+    "image": "https://i.ibb.co/PGzND93M/9i.jpg"
+  }
+]

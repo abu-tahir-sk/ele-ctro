@@ -11,7 +11,7 @@ export default function StandardProductCard({ product }) {
 
   return (
     // Card uses DaisyUI classes: card, bg-base-100, shadow-xl
-    <div className="card bg-base-100 shadow-lg border border-base-200 transition-shadow p-2 group hover:bg-white hover:shadow-2xl hover:rounded-none">
+    <div className="card   border-2 border-base-200 transition-shadow p-2 group hover:bg-white hover:shadow-2xl hover:rounded-none">
       
       {/* Product Category Label */}
       {product.category && <div className="text-sm text-gray-500 text-center pt-2 px- py-2  rounded-lg">{product.category}</div>}

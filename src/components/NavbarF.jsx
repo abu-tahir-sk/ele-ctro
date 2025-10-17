@@ -1,15 +1,29 @@
-import {  AiOutlineUser } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 import { PiCurrencyDollarBold } from "react-icons/pi";
 import { TbCarCrane } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
+import { AiOutlineUser } from "react-icons/ai";
+import { FaFacebookF } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
+import { useState } from "react";
+
 const NavbarF = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle login logic here
+    console.log("Logging in with:", email, password);
+  };
   return (
-    <div className="flex justify-between items-center py-2 text-gray-500 md:w-11/12 lg:w-10/12 mx-auto">
+    <div className="flex justify-between items-center py-2 text-gray-500  min-lg:w-[92%] mx-auto">
       <div>
-        <p className="hover:text-gray-600">Welcome to Worldwide Electronics Store</p>
+        <p className="hover:text-gray-600 text-[13px]">
+          Welcome to Worldwide Electronics Store
+        </p>
       </div>
       <div>
         <ul className="flex justify-center items-center gap-6">
@@ -17,22 +31,28 @@ const NavbarF = () => {
             <a className="text-xl text-gray-800">
               <CiLocationOn />
             </a>
-            <Link>Store Locator |</Link>
+            <Link className="text-[13px]">Store Locator |</Link>
           </li>
 
           <li className="flex justify-center items-center gap-2 ">
             <a className="text-xl text-gray-800">
               <TbCarCrane />
             </a>
-            <Link>Track Your Order |</Link>
+            <Link className="text-[13px]">Track Your Order |</Link>
           </li>
 
           <div className="dropdown dropdown-hover">
-            <div tabIndex={0} role="button" className="m-1  flex justify-center items-center gap-2">
-                  <a className="text-xl font-bold  text-gray-800">
-              <PiCurrencyDollarBold />
-            </a>
-             <Link className="flex justify-center items-center gap-2">Dollor(US) <IoIosArrowDown /> |</Link>
+            <div
+              tabIndex={0}
+              role="button"
+              className="m-1  flex justify-center items-center gap-2"
+            >
+              <a className="text-xl font-bold  text-gray-800">
+                <PiCurrencyDollarBold />
+              </a>
+              <Link className="flex justify-center items-center gap-2 text-[13px]">
+                Dollor(US) <IoIosArrowDown /> |
+              </Link>
             </div>
             <ul
               tabIndex="-1"
@@ -49,13 +69,152 @@ const NavbarF = () => {
               </li>
             </ul>
           </div>
-          
 
           <li className="flex justify-center items-center gap-2">
-            <a className="text-xl font-bold bg-amber-50 text-gray-800">
+            <a className="font-bold  text-gray-800 flex justify-center items-center gap-2">
               <AiOutlineUser />
+              <div className="drawer-content">
+                {/* Page content here */}
+                <label
+                  htmlFor="my-drawer-4"
+                  className="drawer-button text-[13px]"
+                >
+                  Register
+                </label>
+              </div>
+              <p className="text-[13px] font-normal"> or </p>
             </a>
-            <button> <Link className="text-gray-600">Register</Link> or  <Link className="text-gray-600">Sign IN</Link></button>
+            <a className="font-bold  text-gray-800 flex justify-center items-center gap-2">
+              <div className="drawer-content">
+                {/* Page content here */}
+                <label
+                  htmlFor="my-drawer-4"
+                  className="drawer-button text-[13px] font-light"
+                >
+                  Sign IN
+                </label>
+              </div>
+            </a>
+            <div>
+              {" "}
+              <div className="flex justify-end  gap-6">
+                <div className="drawer drawer-end opacity-100">
+                  <input
+                    id="my-drawer-4"
+                    type="checkbox"
+                    className="drawer-toggle"
+                  />
+
+                  <div className="drawer-side">
+                    <label
+                      htmlFor="my-drawer-4"
+                      aria-label="close sidebar"
+                      className="drawer-overlay"
+                    ></label>
+                    <ul className="menu  text-base-content min-h-full w-96 py-4 px-8 bg-white shadow-lg">
+                      {/* Sidebar content here */}
+                      <div className=" flex flex-col justify-center min-h-screen">
+                        <h2 className="text-3xl font-bold text-center text-gray-700 mb-4">
+                          Welcome Back!
+                        </h2>
+                        <p className="text-center text-gray-500 mb-6">
+                          Login to manage your account
+                        </p>
+
+                        <form onSubmit={handleSubmit}>
+                          {/* Email Field */}
+                          <div className="mb-4 relative">
+                            <label
+                              htmlFor="email"
+                              className="block text-gray-700"
+                            >
+                              Email
+                            </label>
+                            <div className="absolute left-3 top-9 text-gray-500">
+                              <AiOutlineUser />
+                            </div>
+                            <input
+                              type="email"
+                              id="email"
+                              value={email}
+                              onChange={(e) => setEmail(e.target.value)}
+                              className="w-full py-2 pl-10 pr-4 border border-gray-300 rounded-full mt-2 focus:outline-none focus:ring-1 focus:ring-blue-400"
+                              placeholder="Enter your email"
+                              required
+                            />
+                          </div>
+
+                          {/* Password Field */}
+                          <div className="mb-6">
+                            <label
+                              htmlFor="password"
+                              className="block text-gray-700"
+                            >
+                              Password
+                            </label>
+                            
+                            <input
+                              type="password"
+                              id="password"
+                              value={password}
+                              onChange={(e) => setPassword(e.target.value)}
+                              className="w-full py-2 pl-4 pr-4 border border-gray-300 rounded-full mt-2 focus:outline-none focus:ring-1 focus:ring-blue-400"
+                              placeholder="Enter your password"
+                              required
+                            />
+                            {/* Forgot Password Link */}
+                            <p
+                              href="/forgot-password"
+                              className="text-[12px] text-gray-500 hover:text-yellow-400  font-light text-end pt-1"
+                            >
+                              Forgot password?
+                            </p>
+                          </div>
+                          
+
+                          {/* Login Button */}
+                          <button
+                            type="submit"
+                            className="w-full py-2 bg-[#fff900] text-black  rounded-full font-bold hover:bg-yellow-400 transition-all duration-300"
+                          >
+                            Login
+                          </button>
+                        </form>
+
+                        {/* Don't have an account? Sign Up Link */}
+                        <p className="text-center text-[12px] font-light text-gray-400 mt-4">
+                          Don't have an account? 
+                          <a
+                            href="/signup"
+                            className="text-[12px] font-light text-gray-500 hover:underline"
+                          >
+                            Sign Up
+                          </a>
+                        </p>
+
+                        {/* Social Media Buttons */}
+                        <div className="flex justify-center items-center gap-4 mt-6">
+                          <button className="flex justify-center items-center gap-2 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-300 transition-all hover:text-black duration-300 font-bold">
+                            <FaFacebookF /> Facebook
+                          </button>
+                          <button className="flex justify-center items-center gap-2 px-6 py-2 bg-emerald-100 text-black font-bold rounded-full hover:bg-red-200 transition-all duration-300">
+                            <FcGoogle /> Google
+                          </button>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="drawer drawer-end overlay z-50 opacity-100">
+                  <input
+                    id="my-drawer-4"
+                    type="checkbox"
+                    className="drawer-toggle"
+                  />
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

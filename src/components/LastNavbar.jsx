@@ -1,8 +1,15 @@
+import { useState } from "react";
 import { TfiMenuAlt } from "react-icons/tfi";
 const LastNavbar = () => {
+    const [isOpen, setIsOpen] = useState(true);
+
+  // Toggle the dropdown open/close
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="bg-base-100 shadow-sm">
-      <div className="navbar w-10/12 mx-auto relative pt-6 pb-0">
+      <div className="navbar min-lg:w-[92%]   mx-auto relative pt-6 pb-0">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,28 +31,45 @@ const LastNavbar = () => {
             </div>
           </div>
           
-          <div className="dropdown dropdown-bottom absolute bottom-0">
-            <div tabIndex={0} role="button" className="flex items-center py-2 pl-4 bg-[#fed700] pr-10 gap-3 font-bold rounded-t-md rounded-b-none">
-                  <TfiMenuAlt size={18} />
-              All Departments
-            </div>
-           < ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm ">
+          <div className="dropdown dropdown-bottom dropdown-open absolute bottom-0">
+             <div
+        
+        role="button"
+        onClick={toggleDropdown}
+        
+        className="flex items-center py-3 pl-4 bg-[#fed700] pr-10 gap-3 font-bold rounded-t-md rounded-b-none btn-wide w-56"
+      >
+        <TfiMenuAlt size={18} />
+        All Departments
+      </div>
+      {
+        isOpen ?  < ul  className="dropdown-content menu   lg:w-56 p-4 shadow-2xl drop-shadow-2xl bg-white rounded-b-md overlay  z-20">
     <li><a>Value of the Day</a></li>
     <li><a>Top 100 Offers</a></li>
-  </ul>
+    <li><a>Value of the Day</a></li>
+    <li><a>Top 100 Offers</a></li>
+    <li><a>Value of the Day</a></li>
+    <li><a>Top 100 Offers</a></li>
+    <li><a>Value of the Day</a></li>
+    <li><a>Top 100 Offers</a></li>
+    <li><a>Value of the Day</a></li>
+    <li><a>Top 100 Offers</a></li>
+  </ul> : ""
+      }
+          
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+        <div className="navbar-center  hidden min-lg:flex">
+          <ul className="menu menu-horizontal  z-20">
             <li>
               <details>
-                <summary className="font-bold text-rose-500">Super Deals</summary>
-                <ul className="p-2">
+                <summary className=" text-rose-500 font-bold">Super Deals</summary>
+                <ul className="py-2">
                   <li>
-                <h3 className="font-bold">Value of the Day</h3>
+                <h3 className="py-2">Value of the Day</h3>
               </li>
              <li>
-                <h3 className="font-bold">Top 100 Offers</h3>
+                <h3 className="">Top 100 Offers</h3>
               </li>
                 </ul>
               </details>
@@ -62,7 +86,7 @@ const LastNavbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <p className="text-gray-600">Free Shipping on Orders $50+</p>
+          <p className="text-gray-600 text-sm">Free Shipping on Orders $50+</p>
         </div>
       </div>
     </div>

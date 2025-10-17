@@ -179,7 +179,8 @@ const FooterSection = () => {
 
         {/* 🔹 Bottom Bar */}
       </footer>
-        <div className="bg-gray-100 max-w-7xl mx-auto  mt-10  py-4">
+        <div className="bg-gray-100">
+          <div className="max-w-7xl mx-auto  mt-10  py-4">
           <div className=" flex flex-col md:flex-row items-center justify-between gap-4">
             {/* Right - Electro Rights */}
             <p className="text-sm text-gray-400 font-bold">
@@ -207,6 +208,7 @@ const FooterSection = () => {
 
             
           </div>
+        </div>
         </div>
     </div>
   );

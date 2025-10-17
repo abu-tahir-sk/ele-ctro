@@ -2,22 +2,62 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../assets/image/logo.png";
 
 import { IoIosSearch } from "react-icons/io";
-import { FiRefreshCcw } from "react-icons/fi";
+import { FiRefreshCcw, FiUploadCloud } from "react-icons/fi";
 import { MdFavoriteBorder } from "react-icons/md";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
+import images from "../assets/image/images.jfif"
 
 const Logo = () => {
   return (
     <div>
-      <div className="navbar w-10/12 mx-auto ">
-        <div className="navbar-start relative">
+      <div className="navbar min-lg:w-[92%] mx-auto ">
+        <div className="navbar-start">
           <div>
-            <img className="h-" src={logo} alt="" />
-            <div className="bg-amber-400 w-1 h-1 p-1 rounded-full absolute top-10 left-36"></div>
+            <img className="" src={logo} alt="" />
+          
           </div>
         </div>
         <div className="text-3xl pr-8">
-          <GiHamburgerMenu />
+          <div className="drawer">
+  <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
+  <div className="drawer-content">
+    {/* Page content here */}
+    <label htmlFor="my-drawer-1" className=" drawer-button"><GiHamburgerMenu /></label>
+  </div>
+  <div className="drawer-side z-50 drop-shadow-emerald-100 overlay" >
+    <label htmlFor="my-drawer-1" aria-label="close sidebar" className="drawer-overlay" ></label>
+    <ul className="menu bg-white min-h-screen p-4 w-80  relative bg-cover bg-no-repeat " >
+      {/* Sidebar content here */} 
+      <div>
+            <img className="h-" src={logo} alt="" />
+            <div className="bg-yellow-400 w-1 h-1 p-1 rounded-full absolute top-14 left-40"></div>
+          </div>
+           <div className="absolute bottom-0 right-[1px] bg-local bg-cover w-full h-[30vh]" style={{ backgroundImage: `url(${images})` }}> 
+      
+          </div>
+         
+      
+       <li><a>Sidebar Item 1</a></li>
+      <li><a>Sidebar Item 2</a></li>
+      <li><a>Sidebar Item 1</a></li>
+      <li><a>Sidebar Item 2</a></li>
+      <li><a>Sidebar Item 1</a></li>
+       <li><a>Sidebar Item 1</a></li>
+      <li><a>Sidebar Item 2</a></li>
+      <li><a>Sidebar Item 1</a></li>
+      <li><a>Sidebar Item 2</a></li>
+      <li><a>Sidebar Item 1</a></li>
+       <li><a>Sidebar Item 1</a></li>
+      
+       <div className="flex justify-center items-center gap-8 fixed bottom-8">
+            <p className="text-white">Privacy</p>
+           <p> Terms</p>
+          </div>
+    </ul>
+    
+  </div>
+</div>
+          
         </div>
 
         <div className="navbar-center hidden lg:flex w-6/12">

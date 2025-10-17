@@ -1,10 +1,10 @@
 import Cameras from "./Cameres";
 import Middel from "./Middel";
-import Smartphones from "./Smartphones";
+
 
 const Audio = () => {
   return (
-    <div className="grid grid-cols-4  p-4 bg-gray-50">
+    <div className="grid grid-cols-1 md:grid-cols-4 bg-white pt-6">
       {/* Left */}
       <div className="flex col-span-1">
         <Cameras />
@@ -17,7 +17,7 @@ const Audio = () => {
 
       {/* Right */}
       <div className="flex col-span-1">
-        <Smartphones />
+       <Cameras />
       </div>
     </div>
   );

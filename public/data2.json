@@ -1,17 +1,17 @@
 [
   {
-    "id": 2,
+    "id": 1,
     "name": "Widescreen NX Mini F1 SMART NX",
-    "image_url": "https://i.ibb.co/4wF4d4Pp/img1.jpg",
+    "image_url": "https://i.ibb.co/6cJS0Chv/banner-3-removebg-preview.png",
     "original_price": 299.00,
     "current_price": 249.00,
     "discount_label": "Save $50",
     "category": "Camera"
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Wireless Headphones A2 Pro",
-    "image_url": "https://i.ibb.co/4wF4d4Pp/img1.jpg",
+    "image_url": "https://i.ibb.co/39kkTsv3/img2.jpg",
     "original_price": 199.00,
     "current_price": 149.00,
     "discount_label": "Save $50",

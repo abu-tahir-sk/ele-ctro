@@ -7,55 +7,47 @@ const BrandSlider = () => {
   const [brands] = useState([
     {
       id: 1,
-      brand_name: "Apple",
-      logo_img: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+      logo_img: "https://i.ibb.co/RTSkf8m7/img1-2.png",
     },
     {
       id: 2,
-      brand_name: "Samsung",
-      logo_img: "https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg",
+
+      logo_img: "https://i.ibb.co/0pXYFT4Y/img2-1.png",
     },
-    {
-      id: 3,
-      brand_name: "Sony",
-      logo_img: "https://upload.wikimedia.org/wikipedia/commons/2/20/Sony_Logo.svg",
-    },
+
     {
       id: 4,
-      brand_name: "LG",
-      logo_img: "https://upload.wikimedia.org/wikipedia/commons/0/02/LG_logo_%282015%29.svg",
+
+      logo_img: "https://i.ibb.co/4wSYLxj2/img3-1.png",
     },
     {
       id: 5,
-      brand_name: "Dell",
-      logo_img: "https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg",
+
+      logo_img:
+        "https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg",
     },
     {
       id: 6,
-      brand_name: "HP",
-      logo_img: "https://upload.wikimedia.org/wikipedia/commons/3/3a/HP_logo_2012.svg",
+
+      logo_img: "https://i.ibb.co/KxzSdwFm/img4-1.png",
     },
     {
       id: 7,
-      brand_name: "Asus",
-      logo_img: "https://upload.wikimedia.org/wikipedia/commons/4/4c/AsusTek_logo.svg",
+
+      logo_img: "https://i.ibb.co/7xsNRWV7/img6.png",
     },
     {
       id: 8,
-      brand_name: "Lenovo",
-      logo_img: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Lenovo_logo_2015.svg",
+      logo_img: "https://i.ibb.co/vCFWCmK1/img5-1.png",
     },
   ]);
 
   return (
-    <div className="w-full bg-gray-50 py-10">
-      <h2 className="text-2xl font-semibold text-center mb-6 text-gray-800">
-        Our Trusted Brands
-      </h2>
-
+  
+     <div className=" border-y-2 w-11/12 mx-auto border-gray-200 px-10 py-3 ">
       <Swiper
         modules={[Autoplay]}
-        autoplay={{ delay: 1500, disableOnInteraction: false }}
+        // autoplay={{ delay: 1500, disableOnInteraction: false }}
         loop={true}
         spaceBetween={30}
         slidesPerView={2}
@@ -68,20 +60,21 @@ const BrandSlider = () => {
       >
         {brands.map((brand) => (
           <SwiperSlide key={brand.id}>
-            <div className="flex flex-col items-center justify-center bg-white border border-gray-200 rounded-md shadow-sm hover:shadow-lg transition-all duration-300 py-5 px-3">
+            <div className="flex justify-center items-center transition-all duration-300 relative px-6 group">
               <img
                 src={brand.logo_img}
                 alt={brand.brand_name}
-                className="h-16 object-contain mb-3 transition-transform duration-300 hover:scale-110"
+                 className="h-12 mb-3 object-cover transition-all duration-300 
+               filter grayscale group-hover:grayscale-0 
+               group-hover:scale-110"
               />
-              <p className="text-gray-700 text-sm font-medium">
-                {brand.brand_name}
-              </p>
+              <div className="absolute inset-1 rounded-lg"></div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
+  
   );
 };
 
