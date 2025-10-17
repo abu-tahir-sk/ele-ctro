@@ -81,21 +81,21 @@ const Logo = () => {
          <div className="flex justify-center items-center gap-8">
           
            <div className="group">
-            <p className="absolute top-2 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p className="absolute top-2 text-sm text-white p-[3px] bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
       Compare
     </p>
             <FiRefreshCcw size={20} />
           </div>
           <div className="group">
-             <p className="absolute top-2 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+             <span className="absolute top-2 text-sm text-white p-[3px] rounded bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
       Favorite
-    </p>
+    </span>
             <MdFavoriteBorder size={20} />
           </div>
-          <div className="flex items-center gap-2 group">
-             <p className="absolute top-2 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="flex items-center gap-2 group ">
+             <span className="absolute top-2 text-sm text-white p-[3px] bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
       Cart
-    </p>
+    </span>
             <HiOutlineShoppingBag className="font-bold" size={20} />
           <h4 className="text-xl font-bold">$1785.00</h4>
           </div>
