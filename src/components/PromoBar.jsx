@@ -1,5 +1,5 @@
 
-import tabletImg from "../assets/image/phon-removebg-preview.png"; // তোমার image path
+import tabletImg from "../assets/image/phon-removebg-preview.png"; 
 
 const PromoBanner = () => {
   return (
@@ -7,7 +7,7 @@ const PromoBanner = () => {
       {/* LEFT TEXT */}
       <div className="flex  flex-row  items-center md:items-center 10 gap-10 z-10">
         <h2 className="text-gray-800 text-xl md:text-3xl font-light tracking-wide leading-snug">
-          <span className="px-3 py-1 font-light tracking-wide">
+          <span className="md:px-3 py-1 font-light tracking-wide">
             SHOP AND <span className="font-bold">SAVE BIG</span>
           </span>{" "}
           ON HOTTEST TABLETS
@@ -16,7 +16,7 @@ const PromoBanner = () => {
         <p className="italic text-gray-700 text-xs uppercase font-medium">
           Starting at
         </p>
-        <p className="font-extrabold text-gray-700 text-2xl md:text-3xl leading-tight">
+        <p className="font-extrabold text-gray-700 text-[20px] md:text-3xl leading-tight">
           $79<sup className="text-base font-semibold align-top">99</sup>
         </p>
       </div>

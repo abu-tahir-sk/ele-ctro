@@ -56,27 +56,84 @@ const Header = () => {
               <RiCloseLargeFill />
             </button>
           </div>
-          <ul className="mt-4 space-y-3">
+          <ul className="mt-4 space-y-3 p-4">
             <li>
-              <a href="#" className="text-gray-700">
-                Item 1
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700">
-                Item 2
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700">
-                Item 3
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700">
-                Item 4
-              </a>
-            </li>
+                  <a>Value of the Day</a>
+                </li>
+                <li>
+                  <a>Top 100 Offers</a>
+                </li>
+                <li>
+                  <a>New Arrivals</a>
+                </li>
+
+                <li>
+                  <details open>
+                    <summary>Computers & Accessories</summary>
+                    <ul>
+                      <li>
+                        <a>All Computers & Accessories</a>
+                      </li>
+                      <li>
+                        <a>Laptops, Desktops & Monitors</a>
+                      </li>
+                      
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details open>
+                    <summary>Cameras, Audio & Video</summary>
+                    <ul>
+                      <li>
+                        <a>Printers & Ink</a>
+                      </li>
+                      <li>
+                        <a>Networking & Internet Devices</a>
+                      </li>
+                      
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details open>
+                    <summary>Mobiles & Tablets</summary>
+                    <ul>
+                      <li>
+                        <a>Computer Accessories</a>
+                      </li>
+                      <li>
+                        <a>Smartphones</a>
+                      </li>
+                      <li>
+                        <details>
+                          <summary>Movies, Music & Video</summary>
+                          <ul>
+                            <li>
+                              <a>Camera Accessories</a>
+                            </li>
+                            <li>
+                              <a>Security & Surveillance</a>
+                            </li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details open>
+                    <summary>TV & Audio</summary>
+                    <ul>
+                      <li>
+                        <a>Submenu 1</a>
+                      </li>
+                      <li>
+                        <a>Submenu 2</a>
+                      </li>
+                    </ul>
+                  </details>
+                  </li>
           </ul>
         </div>
      

@@ -18,9 +18,11 @@ const Home = () => {
       </div>
       <div>
         <Offers></Offers>
-      </div>
-      <ProductGrid></ProductGrid>
-      <div className="mt-12">
+      </div> 
+       <div>
+        <ProductGrid></ProductGrid>
+       </div>
+       <div className="mt-12">
         <BestDeal></BestDeal>
       </div>
       <div className="w-11/12 mx-auto">
@@ -31,8 +33,8 @@ const Home = () => {
       </div>
       <div>
         <PromoBar></PromoBar>
-      </div>
-      <div className="p-6 w-11/12 mx-auto">
+      </div> 
+       <div className="p-6 w-11/12 mx-auto">
         <h2 className="text-2xl  text-gray-800 ">Recently Viewed</h2>
         <div className="border-t-2 border-gray-200  pb-4"></div>
         <SwiperSlider />

@@ -127,12 +127,12 @@ const ProductSection = () => {
   return (
     <section className="w-full py-6">
       {/* 🔹 Tabs */}
-      <div className="flex justify-between space-x-4 mb-8 max-w-11/12 mx-auto border-b-2 border-gray-200 ">
+      <div className="flex md:justify-between space-x-4 mb-8 md:max-w-11/12 mx-auto border-b-2 border-gray-200 ">
         {Object.keys(productsData).map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-12 py-2 font-medium transition-all ${
+            className={ `px-4 md:px-12 py-2 font-medium transition-all ${
               activeTab === tab
                 ? "border-b-2 border-[#fed900] text-gray-700"
                 : " "

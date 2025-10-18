@@ -1,7 +1,7 @@
 // import { useEffect, useState } from "react";
-// import banner from "../assets/image/img1 (1).png"
+// import banner from "../assets/image/img1 (1).png";
 // import backgroundImage from "../assets/image/bg-igm.jpg";
-
+// 
 // const Banner = () => {
 //   const [slider, setSlider] = useState([]);
 
@@ -11,8 +11,6 @@
 //       {
 //         id: 1,
 //         title: "T",
-       
-        
 //       },
 //     ]);
 //   }, []);
@@ -20,30 +18,35 @@
 //   return (
 //     <>
 //       {slider.length > 0 ? (
-//         <div className="relative w-full h-auto min-h-[400px] sm:min-h-[500px] lg:h-[80vh] flex items-center justify-center " >
+//         <div className="relative w-full flex items-center justify-center z-0 ">
 //           {/* Overlay */}
-//           <div className="absolute inset-0  bg-opacity-30 bg-center bg-cover" style={{ backgroundImage: `url(${backgroundImage})` }}></div>
+         
 
 //           {/* Main Wrapper */}
-//           <div className="relative w-full max-w-7xl px-4 sm:px-6 md:px-10 lg:px-16 z-10 text-gray-700 flex items-center justify-between">
-            
+//           <div
+//             // className="relative   z-10 text-gray-700 flex items-center justify-between w-full bg-cover"
+//             style={{ backgroundImage: `url(${backgroundImage})` }}
+//           >
 //             {/* Left Empty Space (Only for Large Screens) */}
-//             <div className="hidden lg:block lg:w-3/12"></div> {/* Empty space for lg screens */}
-
+//             <div className="hidden lg:block lg:w-3/12"></div>{" "}
+//             {/* Empty space for lg screens */}
 //             {/* Right Section: Content + Image */}
-//             <div className="w-full lg:w-9/12 flex flex-row items-center justify-between gap-6 sm:gap-10">
-              
+//             <div className="w-full lg:w-9/12 flex flex-row items-center justify-between gap-6 sm:gap-10 pr-10">
 //               {/* Content (Text) */}
-//               <div className="w-full lg:w-1/2 text-left space-y-4">
+//               <Reveal>
+
+//               <div className="w-full lg:w-1/2 text-left py-8">
 //                 <h2 className="text-3xl sm:text-3xl md:text-5xl lg:text-7xl font-light leading-tight">
-//                  THE NEW STANDARD
+//                   THE NEW STANDARD
 //                 </h2>
 //                 <p className=" md:text-lg opacity-90 font-bold">
-//                  UNDER FAVORABLE SMARTWATCHES
+//                   UNDER FAVORABLE SMARTWATCHES
 //                 </p>
 
 //                 <div className="flex flex-col items-start mt-2 space-y-3">
-//                   <span className="text-sm sm:text-base tracking-wide">FROM</span>
+//                   <span className="text-sm sm:text-base tracking-wide">
+//                     FROM
+//                   </span>
 
 //                   <div className="relative inline-block">
 //                     <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold pl-6">
@@ -62,14 +65,15 @@
 //                   </button>
 //                 </div>
 //               </div>
+//               </Reveal>
 
 //               {/* Image Section */}
-//               <div className="w-full lg:w-1/2 flex justify-center lg:justify-end ">
-//                 <img
-//                   src={banner}
-//                   alt="watch"
-//                   className=" "
-//                 />
+//               <div
+//                 initial={{ opacity: 0 }}
+//                 animate={{ opacity: 1 }}
+//                 className="w-full lg:w-1/2 flex justify-center lg:justify-end h-full"
+//               >
+//                 <img src={banner} alt="watch" className="h-full" />
 //               </div>
 //             </div>
 //           </div>

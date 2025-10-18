@@ -12,8 +12,8 @@ const Offers = () => {
   }, []);
 
   return (
-    <div className="w-full bg-white py-10">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+    <div className="w-11/12 mx-auto bg-white py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
         {offers.map((offer) => (
           <div
             key={offer.id}
@@ -26,7 +26,7 @@ const Offers = () => {
               className="w-[100px] h-auto object-contain"
             />
 
-            {/* 🔹 টেক্সট */}
+           
             <div className="ml-4">
               <h3 className="text-gray-800 font-semibold text-sm leading-tight">
                 CATCH BIG <span className="font-bold text-gray-900">DEALS</span> ON THE <br />

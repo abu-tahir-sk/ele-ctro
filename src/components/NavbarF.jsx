@@ -2,22 +2,80 @@ import { CiLocationOn } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 import { PiCurrencyDollarBold } from "react-icons/pi";
 import { TbCarCrane } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { AiOutlineUser } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "./AuthProvider/AuthProvider";
+import { toast } from "react-toastify";
 
 const NavbarF = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { registerHandler, emailVerification, profileUpdate } =
+    useContext(AuthContext);
+  const navigate = useNavigate();
+
+  
+  const [success, setSuccess] = useState(false);
+  const [errors, setErrors] = useState({
+    password: "",
+    email: "",
+    error: "",
+  });
 
   const handleSubmit = (e) => {
+    let newErrors = { terms: "", password: "", email: "", error: "" };
+
     e.preventDefault();
-    // Handle login logic here
-    console.log("Logging in with:", email, password);
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    setErrors("");
+    setSuccess(false);
+
+    if (password.length < 6) {
+      newErrors.password = "Password should be 6 characters or longer";
+      setErrors(newErrors);
+      return;
+    }
+
+    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = "pleas valid email";
+      setErrors(newErrors);
+      return;
+    } else {
+      registerHandler(email, password)
+        .then((result) => {
+          login("user@example.com");
+
+          emailVerification().then(() => {
+            // if (!result.user.emailVerified) {
+            //   newErrors.email = "Please verify your Email";
+            //   setErrors(newErrors);
+            //   return;
+            // } else {
+            // }
+          });
+
+          e.target.reset();
+          setSuccess(true);
+          toast.success("✅ Login successful!", {
+            position: "top-center",
+          });
+          navigate("/dashboard");
+        })
+
+        .catch((error) => {
+          newErrors.error = error.message;
+          setErrors(newErrors);
+          setSuccess(false);
+          e.target.reset();
+        });
+    }
   };
+
   return (
     <div className="flex justify-between items-center py-2 text-gray-500  min-lg:w-[92%] mx-auto">
       <div>
@@ -70,7 +128,7 @@ const NavbarF = () => {
             </ul>
           </div>
 
-          <li className="flex justify-center items-center gap-2">
+          <div className="flex justify-center items-center gap-2">
             <a className="font-bold  text-gray-800 flex justify-center items-center gap-2">
               <AiOutlineUser />
               <div className="drawer-content">
@@ -79,22 +137,12 @@ const NavbarF = () => {
                   htmlFor="my-drawer-4"
                   className="drawer-button text-[13px]"
                 >
-                  Register
+                  Register  or  <span className="text-[13px] font-light text-gray-800"> Sign IN</span>
                 </label>
               </div>
-              <p className="text-[13px] font-normal"> or </p>
+              
             </a>
-            <a className="font-bold  text-gray-800 flex justify-center items-center gap-2">
-              <div className="drawer-content">
-                {/* Page content here */}
-                <label
-                  htmlFor="my-drawer-4"
-                  className="drawer-button text-[13px] font-light"
-                >
-                  Sign IN
-                </label>
-              </div>
-            </a>
+            
             <div>
               {" "}
               <div className="flex justify-end  gap-6">
@@ -152,7 +200,7 @@ const NavbarF = () => {
                             >
                               Password
                             </label>
-                            
+
                             <input
                               type="password"
                               id="password"
@@ -170,7 +218,6 @@ const NavbarF = () => {
                               Forgot password?
                             </p>
                           </div>
-                          
 
                           {/* Login Button */}
                           <button
@@ -180,10 +227,25 @@ const NavbarF = () => {
                             Login
                           </button>
                         </form>
-
+                       
+                        {errors.password && (
+                          <p className="text-red-500 text-center">
+                            {errors.password}
+                          </p>
+                        )}
+                        {errors.email && (
+                          <p className="text-red-500 text-center">
+                            {errors.email}
+                          </p>
+                        )}
+                        {errors.error && (
+                          <p className="text-red-500 text-center">
+                            {errors.error}
+                          </p>
+                        )}
                         {/* Don't have an account? Sign Up Link */}
                         <p className="text-center text-[12px] font-light text-gray-400 mt-4">
-                          Don't have an account? 
+                          Don't have an account?
                           <a
                             href="/signup"
                             className="text-[12px] font-light text-gray-500 hover:underline"
@@ -215,7 +277,7 @@ const NavbarF = () => {
                 </div>
               </div>
             </div>
-          </li>
+          </div>
         </ul>
       </div>
     </div>
